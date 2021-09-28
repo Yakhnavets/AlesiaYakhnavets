@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>Заполните анкету</h1> 
+<fieldset>
+    <legend>Личные данные</legend>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <label for="surname"><input type="text" placeholder="Фамилия" size="25" pattern="^[А-Я][а-я]" required="required" name="surname" autofocus></label><br>
+        <label for="name"><input type="text" placeholder="Имя" size="20" required="name" pattern="^[А-Я][а-я]"></label><br>
+        <label for="fathername"><input type="text" placeholder="Отчество" required="required"></label>
+    <fieldset>
+        <legend>Пасспортные данные</legend>
+        <form action="http://fe.it-academy.by/TestForm.php" method="GET">
+            <label for="series"><input type="text" size="2" maxlength="2" minlength="2" pattern="^[A-z]" name="series" required="required"></label>
+            <label for="pasnumber"><input type="text" size="7" name="pasnumber" pattern="[0-9]{7}" required="required"></label>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Дата рождения</legend>
+        <form action="http://fe.it-academy.by/TestForm.php" method="GET">
+            <label for="year"><input type="text" pattern="[0-9]{4}" size="4" name="year" placeholder="2000"></label><br>
+            <label for="month">
+                <select name="month" id="month">
+                    <option value="Jen">Январь</option>
+                    <option value="Feb">Февраль</option>
+                    <option value="Mar">Март</option>
+                    <option value="April">Апрель</option>
+                    <option value="May">Май</option>
+                    <option value="Jun">Июнь</option>
+                    <option value="July">Июля</option>
+                    <option value="August">Август</option>
+                    <option value="Septem">Сентябрь</option>
+                    <option value="Oct">Октябрь</option>
+                    <option value="Nov">Ноябрь</option>
+                    <option value="Dec">Декабрь</option>
+                </select><br>
+            </label>
+            <label for="day"><input type="number" size="2" name="day" min="1" max="31"></label>
+        </form>
+    </fieldset>
+    <label for="nationality">
+        <select name="nationality" id="nationality">
+            <option value="Belarus">РБ</option>
+            <option value="Russia">РФ</option>
+            <option value="USA">США</option>
+        </select>
+    </label><br>
+    <p>Адрес:</p>
+    <label for="address"><input type="address" name="address" size="45"></label>
+</form>
+</fieldset>
+<fieldset>
+    <legend>Домашние животные</legend>
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST"></form>
+    <label for="animal">
+        <select maltipal name="anim" id="anim">
+            <optgroup label="Попугаи">
+                <option value="anim1">Волнистый</option>
+                <option value="anim2">Ара</option>
+                <option value="anim3">Неразлучный</option>
+            </optgroup>
+            <optgroup label="Рыба">
+                <option value="anim4">Караси</option>
+                <option value="anim5">Окуни</option>
+                <option value="anim6">Осетр</option>
+            </optgroup>
+            <optgroup label="Птицы">
+                <option value="anim7">Стая ворон</option>
+                <option value="anim8">Аист</option>
+                <option value="anim9">Археоптерик</option>
+            </optgroup>
+        </select>
+    </label>
+</fieldset>
+<fieldset>
+    <legend>Данные для входа и восстановления пароля</legend>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <label for="login"><input type="text" size="20" minlength="5" pattern="[A-Za-z]" required placeholder="Логин" name="login"></label><br>
+        <label for="pass"> <input type="password" size="20" minlength="10" required autocomplete="off" placeholder="Пароль" name="pass"></label><br>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>Координаты</legend>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <label for="mail"><input type="email" name="mail" placeholder="введите адрес почты"></label><br>
+        <label for="url"><input type="url" name="url" placeholder="введите адрес сайта"></label>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>Цифры</legend>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <label for="num"><input type="number" min="-2,5" max="2,5" pattern="\d+(,\d{0,1})?" name="num"></label><br>
+        <label for="rang"><input type="range" min="1" max="10" name="rang"></label>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>Кнопки управления</legend>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <label><input type="submit" value="Отправить"></label><br>
+        <label><input type="reset" value="Сбросить"></label><br>
+        <button><img src="../add/pic/Без названия.jpeg"></button>
+    </form>
+</fieldset>
+</body>
+</html>
