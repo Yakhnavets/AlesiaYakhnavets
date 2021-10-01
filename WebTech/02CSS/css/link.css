@@ -1,0 +1,39 @@
+
+.three{
+    background-image: url(../PIC/cards.png);
+    background-repeat: no-repeat;
+    background-position: -145px -200px;
+    width: 145px; height: 200px; border: solid white 1px;
+    float: left;
+    }
+.five{
+    background-image: url(../PIC/cards.png);
+    background-repeat: no-repeat;
+    background-position: -430px -600px;
+    width: 145px; height: 200px; border: solid white 1px;
+    float: left;
+    }
+.nine{
+    background-image: url(../PIC/cards.png);
+    background-repeat: no-repeat;
+    background-position: -285px -1390px;
+    width: 145px; height: 200px; border: solid white 1px;
+    float: left;
+    }
+.position{
+    position: relative;
+    left: 55px;
+    z-index: 1;
+    }
+.position2{
+    position: relative;
+    left: -70px;
+    top: 25px;
+    z-index: 3;
+    }
+.position3{
+    position: relative;
+    left: -190px;
+    top: 50px;
+    z-index: 5;
+    }
